@@ -10,14 +10,24 @@ def getData():
 
     soup = BeautifulSoup(res.content, 'html.parser')
 
-    jobsList = soup.find('div', class_="cell-list-content")
+    jobsList = soup.findAll('div', class_="cell-list-content")
 
-    title = jobsList.find('h3', class_="text-24 line-height-30")
+    for job in jobsList:
+        title = job.find(
+            'h3', class_="text-24 line-height-30").text
 
-    company = jobsList.findNext('div', class_="cell-list-content-icon")
+        infosList = job.find('div', class_="cell-list-content-icon")
 
-    print(title)
-    print(company)
+        infos = infosList.findAll('span')
+
+        print('Titulo da vaga:    ', title)
+        print('Empresa:           ', infos[0].text)
+        print('Local de trabalho: ', infos[1].text)
+        print('Porte da empresa:  ', infos[2].text)
+        print('Porte da empresa:  ', infos[3].text)
+        print('Nivel:             ', infos[4].text)
+        print('PJ/ CLT:           ', infos[5].text)
+        print('\n -------------------------------------- \n')
 
 
 getData()
