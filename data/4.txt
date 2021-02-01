@@ -1,0 +1,7 @@
+Titulo da vaga: Desenvolvedor(a) Node JS 
+Empresa: Start You Up 
+Local de trabalho: Vitória, ES 
+Porte da empresa: Startup 
+Porte da empresa: Até R$3.500 
+Nivel: Júnior 
+PJ/ CLT: PJ
