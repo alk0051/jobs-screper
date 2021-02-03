@@ -27,7 +27,7 @@ def getData():
             print('Empresa:           ', infos[0].text)
             print('Local de trabalho: ', infos[1].text)
             print('Porte da empresa:  ', infos[2].text)
-            print('Porte da empresa:  ', infos[3].text)
+            print('Expect. salarial:  ', infos[3].text)
             print('Nivel:             ', infos[4].text)
             print('PJ/ CLT:           ', infos[5].text)
             print('\n -------------------------------------- \n')
