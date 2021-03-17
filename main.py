@@ -36,7 +36,7 @@ def getData():
             f.write(f"Empresa: {infos[0].text} \n")
             f.write(f"Local de trabalho: {infos[1].text} \n")
             f.write(f"Porte da empresa: {infos[2].text} \n")
-            f.write(f"Porte da empresa: {infos[3].text} \n")
+            f.write(f"Expectativa salarial: {infos[3].text} \n")
             f.write(f"Nivel: {infos[4].text} \n")
             f.write(f'PJ/ CLT: {infos[5].text}')
 
